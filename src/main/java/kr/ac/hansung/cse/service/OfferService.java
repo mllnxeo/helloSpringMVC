@@ -15,4 +15,8 @@ public class OfferService {
     public List<Offer> getAllOffers() {
         return  offerDao.getOffers();
     }
+
+    public void insertOffer(Offer offer) {
+        offerDao.insert(offer);
+    }
 }
